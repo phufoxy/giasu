@@ -1,0 +1,144 @@
+* {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+body {
+  line-height: 1.4em;
+  font-family: "roboto";
+  background-image: url("../images/bg.png");
+}
+.b-page-header {
+  background-color: #001873;
+}
+.b-page-header .b-commit {
+  display: flex;
+}
+.b-page-header .b-commit .b-icon {
+  position: relative;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+}
+.b-page-header .b-commit .b-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+}
+.b-page-header .b-commit .b-info {
+  display: block;
+  background-color: #5073f9;
+  max-height: 30px;
+  min-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.b-page-header .b-commit .b-info .b-text-norm {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.b-page-header marquee {
+  color: #fff;
+  margin-top: 5px;
+}
+.b-page-header .b-form {
+  display: inline-block;
+  text-align: right;
+  padding-right: 80px;
+}
+.b-page-header .b-form input[type="text"] {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+}
+.b-page-header .b-form input[type="submit"] {
+  background-color: #5073f9;
+  border: none;
+  color: #fff;
+  padding: 8px 10px 8px 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.b-page-banner {
+  display: block;
+}
+.b-page-banner .b-block {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+}
+.b-page.banner .b-block img {
+  width: 100%;
+  height: 100%;
+}
+.b-page-menu {
+  display: block;
+  background-color: #5073f9;
+}
+.b-page-menu .b-page-nav {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.b-page-menu .b-page-nav .b-item {
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+}
+.b-page-menu .b-page-nav .b-item:hover {
+  background-color: #001873;
+  cursor: pointer;
+}
+.b-page-menu .b-page-nav .b-item .b-link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu {
+  position: relative;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0dd";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #fff;
+  margin-top: -10px;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu:hover .b-dropdown {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+  transition: all 0.5s ease-in-out;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu .b-dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu .b-dropdown .b-item {
+  display: block;
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu .b-dropdown .b-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.b-page-menu .b-page-nav .b-item.b-hash-menu .b-dropdown .b-link {
+  color: #000;
+}
