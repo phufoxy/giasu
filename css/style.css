@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
 }
+/* import font roboto  */
 @font-face {
   font-family: "roboto";
   src: url("../fonts/Roboto-Regular.ttf");
@@ -13,6 +14,7 @@ body {
 .b-page-header {
   background-color: #001873;
 }
+/* sử dụng flex để chia div icon với info */
 .b-page-header .b-commit {
   display: flex;
 }
@@ -22,6 +24,7 @@ body {
   height: 30px;
   width: 30px;
 }
+/* cho icon ngôi sao vào giữa content */
 .b-page-header .b-commit .b-icon i {
   position: absolute;
   left: 50%;
@@ -42,6 +45,7 @@ body {
   margin-top: 5px;
   font-size: 14px;
 }
+/* marquee là thẻ chạy tự động của html 5 */
 .b-page-header marquee {
   color: #fff;
   margin-top: 5px;
@@ -89,6 +93,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+/* display: inline-block các li sẽ nằm ngang khi nào đầy width sẽ nhảy xuioongs */
 .b-page-menu .b-page-nav .b-item {
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -105,6 +110,7 @@ body {
 .b-page-menu .b-page-nav .b-item.b-hash-menu {
   position: relative;
 }
+/* after content cho sử dụng awesome  */
 .b-page-menu .b-page-nav .b-item.b-hash-menu::after {
   font-family: "Font Awesome 5 Free";
   content: "\f0dd";
@@ -133,6 +139,7 @@ body {
   border-radius: 5px;
   margin-top: 30px;
 }
+/* display block .. sẽ nhảy xuống hàng tiếp theo */
 .b-page-menu .b-page-nav .b-item.b-hash-menu .b-dropdown .b-item {
   display: block;
 }
